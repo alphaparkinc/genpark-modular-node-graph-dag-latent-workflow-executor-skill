@@ -1,0 +1,38 @@
+{
+  "name": "genpark-modular-node-graph-dag-latent-workflow-executor-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Modular node-graph DAG executor managing topological latent diffusion pipelines with custom samplers.",
+  "author": "genpark",
+  "category": "dag-executor",
+  "tags": [
+    "comfyui",
+    "node-graph",
+    "dag-pipeline",
+    "latent-diffusion",
+    "workflow-executor"
+  ],
+  "inputs": {
+    "workflow_dag_json": {
+      "type": "string"
+    },
+    "execution_priority": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "dag_execution_id": {
+      "type": "string"
+    },
+    "nodes_evaluated_count": {
+      "type": "integer"
+    },
+    "vram_peak_allocation_gb": {
+      "type": "number"
+    },
+    "output_artifacts_urls": {
+      "type": "array"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
